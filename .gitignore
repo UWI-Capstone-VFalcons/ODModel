@@ -1,5 +1,12 @@
-# Dont include the models diectory for tensorflow
+# Dont include the models diectory for tensorflow, label img and training
 models/
+labelImg/
+armaps-od/training/*
+
+# only include config files from training
+!armaps-od/training/faster_rcnn_inception_v2_pets.config
+!armaps-od/training/labelmap.pbtxt
+!armaps-od/training/graph.pbtxt
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
