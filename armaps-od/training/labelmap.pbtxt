@@ -1,0 +1,20 @@
+item {
+    id: 1
+    name: 'stone_bench'
+}
+item {
+    id: 2
+    name: 'stall'
+}
+item {
+    id: 3
+    name: 'slt1_door'
+}
+item {
+    id: 4
+    name: 'slt2_door'
+}
+item {
+    id: 5
+    name: 'st_label'
+}

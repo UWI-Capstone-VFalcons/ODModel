@@ -5,5 +5,14 @@ services:
         image: od 
         stdin_open: true
         tty: true
-
-        
+        ports:
+            - "6006:6006"
+        volumes:
+            - ./process-images:/home/tensorflow/models/research/object_detection/images
+            - ./xml_to_csv.py:/home/tensorflow/models/research/object_detection/xml_to_csv.py
+            - ./generate_tfrecord.py:/home/tensorflow/models/research/object_detection/generate_tfrecord.py
+            - ./transform_image_resolution.py:/home/tensorflow/models/research/object_detection/transform_image_resolution.py
+            - ./train.py:/home/tensorflow/models/research/object_detection/train.py
+            - ./training:/home/tensorflow/models/research/object_detection/training
+            - ./faster_rcnn_inception_v2_coco:/home/tensorflow/models/research/object_detection/faster_rcnn_inception_v2_coco
+            - ./records:/home/tensorflow/models/research/object_detection/records

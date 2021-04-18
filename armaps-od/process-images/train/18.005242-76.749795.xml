@@ -1,0 +1,26 @@
+<annotation>
+	<folder>process-images</folder>
+	<filename>18.005242-76.749795.jpg</filename>
+	<path>/home/lewiking/Desktop/work/school/ODModel/armaps-od/process-images/18.005242-76.749795.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>800</width>
+		<height>600</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>slt2_door</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>54</xmin>
+			<ymin>41</ymin>
+			<xmax>744</xmax>
+			<ymax>562</ymax>
+		</bndbox>
+	</object>
+</annotation>
