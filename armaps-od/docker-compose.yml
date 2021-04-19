@@ -6,8 +6,13 @@ services:
         stdin_open: true
         tty: true
         ports:
+            - "8888:8888"
             - "6006:6006"
+        devices:
+            - /dev/video0:/dev/video0
         volumes:
+            - /tmp/.X11-unix:/tmp/.X11-unix
+            - OD-data:/home/tensorflow
             - ./process-images:/home/tensorflow/models/research/object_detection/images
             - ./xml_to_csv.py:/home/tensorflow/models/research/object_detection/xml_to_csv.py
             - ./generate_tfrecord.py:/home/tensorflow/models/research/object_detection/generate_tfrecord.py
@@ -16,3 +21,7 @@ services:
             - ./training:/home/tensorflow/models/research/object_detection/training
             - ./faster_rcnn_inception_v2_coco:/home/tensorflow/models/research/object_detection/faster_rcnn_inception_v2_coco
             - ./records:/home/tensorflow/models/research/object_detection/records
+            - ./inference_graph:/home/tensorflow/models/research/object_detection/inference_graph
+            - ./object_detection_tutorial.ipynb:/home/tensorflow/models/research/object_detection/object_detection_tutorial.ipynb
+volumes:
+    OD-data:

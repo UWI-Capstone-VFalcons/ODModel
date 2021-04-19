@@ -1,7 +1,10 @@
-# Dont include the models diectory for tensorflow, label img and training
+# Dont include the models diectory for tensorflow, label img, additional unassign images and training
 models/
 labelImg/
 armaps-od/training/*
+armaps-od/inference_graph/*
+raw-images/
+usable-raw/
 
 # only include config files from training
 !armaps-od/training/faster_rcnn_inception_v2_pets.config

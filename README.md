@@ -13,7 +13,18 @@ git clone https://github.com/tensorflow/models.git
 ```
 
 2. Install tensorflow
+First modify the dockerfile at research/object_detection/dockerfiles/tf1/, by adding  below at line 15 
 ```
+libgl1-mesa-dev
+```
+and add below at line 41
+```
+RUN pip install jupyterlab
+RUN pip install opencv-python
+```
+
+```
+cd models
 docker build -f research/object_detection/dockerfiles/tf1/Dockerfile -t od .
 ```
 3. Run tensorflow
@@ -69,9 +80,12 @@ If a new python package is added refresh the requirments filr with
 ```
 pip freeze > requirements.txt
 ```
+**Run Jupyter**
+```
+jupyter notebook --port=8888 --no-browser --ip=0.0.0.0 --allow-root
+```
 
-
-## Steps to train model (Perform all these comands in the tensorflow docker container)
+## Steps to train and test model (Perform all these comands in the tensorflow docker container)
 
 1. Transforming image sizes**
 ```
@@ -93,7 +107,15 @@ python generate_tfrecord.py --csv_input=images/test_labels.csv --image_dir=image
 ```
 python model_main.py --logtostderr --model_dir=training/ --pipeline_config_path=training/faster_rcnn_inception_v2_pets.config
 ```
+6. In another terminal start enter the comands to view the tensorflow logs
+```
+docker exec -it armaps-od_tensorflow_1 /bin/bash
+cd object_detection
+tensorboard --logdir=training
+```
 
-
-python generate_tfrecord.py --csv_input=images/train_labels.csv --image_dir=images/train --output_path=train.record
-python generate_tfrecord.py --csv_input=images/test_labels.csv --image_dir=images/test --output_path=test.record
+7. Export the inference graph for the results (change XXX to the highest number in the training fodler)
+```
+python export_inference_graph.py --input_type image_tensor --pipeline_config_path training/faster_rcnn_inception_v2_pets.config --trained_checkpoint_prefix training/model.ckpt-XXXX --output_directory inference_graph
+```
+8. Test the model
