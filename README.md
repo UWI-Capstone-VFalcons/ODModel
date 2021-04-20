@@ -89,11 +89,11 @@ jupyter notebook --port=8888 --no-browser --ip=0.0.0.0 --allow-root
 
 1. Transforming image sizes**
 ```
-python transform_image_resolution.py -d process-images/ -s 800 600
+python transform_image_resolution.py -d images/ -s 800 600
 ```
-1. Label the images using  labelImg 
+2. Label the images using  labelImg 
    
-2. Transform xml to csv 
+3. Transform xml to csv 
 ```
 python xml_to_csv.py
 ```

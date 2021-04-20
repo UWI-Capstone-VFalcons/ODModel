@@ -13,7 +13,7 @@ services:
         volumes:
             - /tmp/.X11-unix:/tmp/.X11-unix
             - OD-data:/home/tensorflow
-            - ./process-images:/home/tensorflow/models/research/object_detection/images
+            - ./images:/home/tensorflow/models/research/object_detection/images
             - ./xml_to_csv.py:/home/tensorflow/models/research/object_detection/xml_to_csv.py
             - ./generate_tfrecord.py:/home/tensorflow/models/research/object_detection/generate_tfrecord.py
             - ./transform_image_resolution.py:/home/tensorflow/models/research/object_detection/transform_image_resolution.py
