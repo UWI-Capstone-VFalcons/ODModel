@@ -1,0 +1,26 @@
+<annotation>
+	<folder>18.0050609_-76.7496662_auntyjackie</folder>
+	<filename>18.0050609_-76.7496662_auntyjackie_19.jpg</filename>
+	<path>/home/lewiking/Desktop/work/school/ODModel/armaps-od/process-images/18.0050609_-76.7496662_auntyjackie/18.0050609_-76.7496662_auntyjackie_19.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>800</width>
+		<height>600</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>18.0050609_-76.7496662_auntyjackie</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>134</xmin>
+			<ymin>1</ymin>
+			<xmax>655</xmax>
+			<ymax>371</ymax>
+		</bndbox>
+	</object>
+</annotation>

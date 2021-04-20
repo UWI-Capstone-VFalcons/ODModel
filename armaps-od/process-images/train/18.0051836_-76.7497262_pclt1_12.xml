@@ -1,0 +1,26 @@
+<annotation>
+	<folder>18.0051836_-76.7497262_pclt1</folder>
+	<filename>18.0051836_-76.7497262_pclt1_12.jpg</filename>
+	<path>/home/lewiking/Desktop/work/school/ODModel/armaps-od/process-images/18.0051836_-76.7497262_pclt1/18.0051836_-76.7497262_pclt1_12.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>800</width>
+		<height>600</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>18.0051836_-76.7497262_pclt1</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>155</xmin>
+			<ymin>60</ymin>
+			<xmax>645</xmax>
+			<ymax>552</ymax>
+		</bndbox>
+	</object>
+</annotation>

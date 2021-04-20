@@ -1,0 +1,26 @@
+<annotation>
+	<folder>18.0051667_-76.74944412_librarystall</folder>
+	<filename>18.0051667_-76.74944412_librarystall_21.jpg</filename>
+	<path>/home/lewiking/Desktop/work/school/ODModel/armaps-od/process-images/18.0051667_-76.74944412_librarystall/18.0051667_-76.74944412_librarystall_21.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>800</width>
+		<height>600</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>18.0051667_-76.74944412_librarystall</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>145</xmin>
+			<ymin>176</ymin>
+			<xmax>620</xmax>
+			<ymax>474</ymax>
+		</bndbox>
+	</object>
+</annotation>

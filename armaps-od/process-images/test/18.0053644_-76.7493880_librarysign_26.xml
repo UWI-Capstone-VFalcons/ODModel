@@ -1,0 +1,26 @@
+<annotation>
+	<folder>18.0053644_-76.7493880_librarysign</folder>
+	<filename>18.0053644_-76.7493880_librarysign_26.jpg</filename>
+	<path>/home/lewiking/Desktop/work/school/ODModel/armaps-od/process-images/18.0053644_-76.7493880_librarysign/18.0053644_-76.7493880_librarysign_26.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>800</width>
+		<height>600</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>18.0053644_-76.7493880_librarysign</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>89</xmin>
+			<ymin>87</ymin>
+			<xmax>707</xmax>
+			<ymax>268</ymax>
+		</bndbox>
+	</object>
+</annotation>

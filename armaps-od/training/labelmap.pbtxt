@@ -1,20 +1,36 @@
 item {
     id: 1
-    name: 'stone_bench'
+    name: '18.0050609_-76.7496662_auntyjackie'
 }
 item {
     id: 2
-    name: 'stall'
+    name: '18.0050864_-76.7496363_bench'
 }
 item {
     id: 3
-    name: 'slt1_door'
+    name: '18.0051667_-76.74944412_librarystall'
 }
 item {
     id: 4
-    name: 'slt2_door'
+    name: '18.0051836_-76.7497262_pclt1'
 }
 item {
     id: 5
-    name: 'st_label'
+    name: '18.0053245_-76.7486424_recyclebin'
+}
+item {
+    id: 6
+    name: '18.0053530_-76.7490375_signatentrancetoscitech'
+}
+item {
+    id: 7
+    name: '18.0053644_-76.7493880_librarysign'
+}
+item {
+    id: 8
+    name: '18.0053657_-76.7491452_physicssign'
+}
+item {
+    id: 9
+    name: '18.0055634_-76.7484079_scitechsign'
 }

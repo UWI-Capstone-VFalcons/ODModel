@@ -1,0 +1,26 @@
+<annotation>
+	<folder>18.0053530_-76.7490375_signatentrancetoscitech</folder>
+	<filename>18.0053530_-76.7490375_signatentrancetoscitech_24.jpg</filename>
+	<path>/home/lewiking/Desktop/work/school/ODModel/armaps-od/process-images/18.0053530_-76.7490375_signatentrancetoscitech/18.0053530_-76.7490375_signatentrancetoscitech_24.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>800</width>
+		<height>600</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>18.0053530_-76.7490375_signatentrancetoscitech</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>48</xmin>
+			<ymin>289</ymin>
+			<xmax>610</xmax>
+			<ymax>403</ymax>
+		</bndbox>
+	</object>
+</annotation>

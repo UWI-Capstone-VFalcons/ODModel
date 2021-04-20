@@ -1,0 +1,26 @@
+<annotation>
+	<folder>18.0050864_-76.7496363_bench</folder>
+	<filename>18.0050864_-76.7496363_bench_4.jpg</filename>
+	<path>/home/lewiking/Desktop/work/school/ODModel/armaps-od/process-images/18.0050864_-76.7496363_bench/18.0050864_-76.7496363_bench_4.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>800</width>
+		<height>600</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>18.0050864_-76.7496363_bench</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>436</xmin>
+			<ymin>119</ymin>
+			<xmax>734</xmax>
+			<ymax>286</ymax>
+		</bndbox>
+	</object>
+</annotation>

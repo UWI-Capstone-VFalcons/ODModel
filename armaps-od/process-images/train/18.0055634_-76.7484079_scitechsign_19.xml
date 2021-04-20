@@ -1,0 +1,26 @@
+<annotation>
+	<folder>18.0055634_-76.7484079_scitechsign</folder>
+	<filename>18.0055634_-76.7484079_scitechsign_19.jpg</filename>
+	<path>/home/lewiking/Desktop/work/school/ODModel/armaps-od/process-images/18.0055634_-76.7484079_scitechsign/18.0055634_-76.7484079_scitechsign_19.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>800</width>
+		<height>600</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>18.0055634_-76.7484079_scitechsign</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>239</xmin>
+			<ymin>57</ymin>
+			<xmax>499</xmax>
+			<ymax>332</ymax>
+		</bndbox>
+	</object>
+</annotation>

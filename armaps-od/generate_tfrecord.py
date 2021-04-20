@@ -13,7 +13,7 @@ from __future__ import absolute_import
 import os
 import io
 import pandas as pd
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
 
 from PIL import Image
 from object_detection.utils import dataset_util
@@ -28,16 +28,24 @@ FLAGS = flags.FLAGS
 
 # TO-DO replace this with label map
 def class_text_to_int(row_label):
-    if row_label == 'stone_bench':
+    if row_label == '18.0050609_-76.7496662_auntyjackie':
         return 1
-    elif row_label == 'stall':
+    elif row_label == '18.0050864_-76.7496363_bench':
         return 2
-    elif row_label == 'slt1_door':
+    elif row_label == '18.0051667_-76.74944412_librarystall':
         return 3
-    elif row_label == 'slt2_door':
+    elif row_label == '18.0051836_-76.7497262_pclt1':
         return 4
-    elif row_label == 'st_label':
+    elif row_label == '18.0053245_-76.7486424_recyclebin':
         return 5
+    elif row_label == '18.0053530_-76.7490375_signatentrancetoscitech':
+        return 6
+    elif row_label == '18.0053644_-76.7493880_librarysign':
+        return 7
+    elif row_label == '18.0053657_-76.7491452_physicssign':
+        return 8
+    elif row_label == '18.0055634_-76.7484079_scitechsign':
+        return 9
     else:
         return None
 
