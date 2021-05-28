@@ -119,3 +119,18 @@ tensorboard --logdir=training
 python export_inference_graph.py --input_type image_tensor --pipeline_config_path training/faster_rcnn_inception_v2_pets.config --trained_checkpoint_prefix training/model.ckpt-XXXX --output_directory inference_graph
 ```
 8. Test the model
+9. Convert to Js compatible format 
+Run below inside of the container
+```
+pip install tensorflowjs[wizard]
+cd object_detection/inference_graph
+tensorflowjs_wizard
+
+```
+
+tensorflowjs_converter \
+    --input_format=tf_saved_model \
+    --output_node_names='MobilenetV1/Predictions/Reshape_1' \
+    --saved_model_tags=serve \
+    saved_model \
+    web_model2
